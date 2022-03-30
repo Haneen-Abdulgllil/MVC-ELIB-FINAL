@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+    font-family:'Tajawal';
+}
+*{
+    font-family:'Tajawal';
+}
+.container-cart{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: flex-start;
+
+}
+.container-cart .head{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container-cart .head i{
+    font-size: 25px;
+}
+.container-cart .head h2 sub{
+    font-size: 10px;
+    color: dimgray;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.right{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.product .row{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+.product .row .pro-right{
+    width: 10%;
+}
+.product .row .pro-right img{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+}
+.product .row .pro-center{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+    line-height: 0;
+    padding: 10px;
+}
+.product .row .pro-center h6{
+    margin-top: -3px;
+    color: darkgray;
+}
+.product .row .pro-center .note{
+    background-color: rgb(250, 239, 235);
+    border-right: 7px solid orange;
+    padding: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.product .row .pro-center .note .line1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.product .row .pro-center .note .line1 #note{
+    font-weight: bold;
+}
+
+.product .row .pro-center .note .line2 a{
+    padding-top: -10px;
+    text-decoration: none;
+    color: rgb(5, 5, 168);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.product .row .pro-left{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+
+}
+.product .row .pro-left .col1-left{
+    font-size: 20px;
+    color: rgb(185, 8, 8);;
+    font-weight: bold;
+}
+.product .row .pro-left .col2-left{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    justify-content: center;
+
+}
+.product .row .pro-left .col2-left #btn1 button{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px #444 solid;
+}
+.product .row .pro-left .col2-left #btn2{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.content hr{ 
+    width: 95%;
+}
+.content .row a {
+    text-decoration: none;
+    color: black;
+    direction: rtl;
+    margin-top: -10px;
+    font-weight: bold;
+}
+.left{
+    width: 30%;
+    margin-right: 5%;
+}
+.left .total{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.left .total .row1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    line-height: 0px;
+    margin-bottom: 60px;
+    text-align: right;
+}
+.left .total .row1 .col{
+    display: flex;
+    flex-direction: column;
+}
+.left .total .row1 .col p{
+    font-weight: bold;
+}
+.left .total .row1 .col h3{
+    color: rgb(185, 8, 8);
+}
+.left .total .row1 .col h3 sub{
+    color: darkslategrey;
+    font-size: 10px;
+    margin-top: 5px;
+
+}
+.left .total .row1 .col h2{
+    color: rgb(11, 201, 11);
+    margin-top: 5px;
+}
+
+.left .total .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+.left .total .row2 p{
+    direction: rtl;
+    font-size: 13px;
+}
+.left .total .row2 a button{
+    background-color: rgb(185, 8, 8);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+}
+
+
+
+/* start responsive */
+@media screen and (max-width:600px){
+    .content{
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .product{
+        padding: 10px;
+    }
+    .product .row .pro-center .note{
+        padding: 15px;
+        width: 100%;
+    }
+    .product .row .pro-center h3{
+        font-size: 11px;
+    }
+    .product .row .pro-center .note .line1{
+        font-size: 8px;
+    }
+    
+    .product .row .pro-center .note .line2 a{
+        font-size: 9px;
+    }
+    .product .row .pro-left .col1-left{
+        font-size: 15px;
+    }
+    .product .row .pro-left .col2-left{
+    width: 20%;
+    padding-left: 20px;
+    }
+}
+/* end responsive */
+
+
+
+
