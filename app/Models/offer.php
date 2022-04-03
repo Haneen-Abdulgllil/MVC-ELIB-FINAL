@@ -1,13 +1,11 @@
 <?php
 namespace coding\app\models;
 
-class Book extends Model{
+class Offer extends Model{
     function __construct()
     {
-    
-        parent::$tblName="books";
-    
-    
+
+        parent::$tblName="offers";
     }
 }
 ?>

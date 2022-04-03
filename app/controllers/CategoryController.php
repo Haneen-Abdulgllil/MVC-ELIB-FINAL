@@ -12,7 +12,7 @@ class CategoryController extends Controller{
 
     function listAll(){
         $categories=new Category();
-        $allCategories=$categories->getAll();
+        $allCategories = Category::getAll('categories');
 
         $this->view('app-category-list',$allCategories);
 
@@ -36,8 +36,14 @@ class CategoryController extends Controller{
 
 
     }
-    function edit(){
-            $this->view('edit_category');
+    
+    function edit($params=[]){
+
+        $cat=new Category();
+        $result=$cat->getSingleRow($params['id']);
+        $this->view('edit_category',$result);
+        
+
     }
     function update(){
 
@@ -45,6 +51,18 @@ class CategoryController extends Controller{
     public function remove(){
 
     }
+
+    
+    public function unActivate(){
+        $id = $_POST['id'];
+        $is_active = $_POST['is_active'];
+        if($is_active==0)$is_active=1;
+        else $is_active = 0;
+        $category = new Category();
+        $category->update(array("is_active"),array($is_active), "id= $id");
+        header("location:/categories"); 
+    }
+
 
 
     public static function uploadFile(array $imageFile): string

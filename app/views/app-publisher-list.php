@@ -501,9 +501,9 @@
           </tr>
         </thead>
         <tbody>
-       
-         
-         <?php foreach($params as $publisher){?>
+        
+          
+          <?php foreach($params as $publisher){?>
           <tr>
             
             <td><?= $publisher['name'];?></td>
@@ -521,7 +521,7 @@
             <span class="badge bg-label-success me-1">مفعل</span>
             <?php }
             else {?>
-             <span class="badge bg-label-danger me-1">موقف</span>
+            <span class="badge bg-label-danger me-1">موقف</span>
             <?php } ?>
             </td>
             <td>

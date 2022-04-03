@@ -1,22 +1,22 @@
 <?php
 namespace coding\app\controllers;
 
-use coding\app\models\Book;
+
+use coding\app\Models\Book;
 
 class BooksController extends Controller{
 
-    function listAll(){
-        $books=new Book();
-        $allBooks=$books->getAll();
-    
-
-        $this->view('app-book-list',$allBooks);
-
-    }
     function add_book(){
         $this->view('add_book');
+    }
+
+    function listAll(){
+        $books=new Book();
+        $allbooks = Book::getAll('books');
+        $this->view('app-book-list',$allbooks);
 
     }
+
 
     function store(){
         print_r($_POST);
@@ -25,10 +25,7 @@ class BooksController extends Controller{
         
         $book->title=$_POST['name'];
         $imageName=$this->uploadFile($_FILES['image']);
-
         $book->image=$imageName!=null?$imageName:"default.png";
-
-        
         $book->pages_number=$_POST['pages_number'];
         $book->price=$_POST['price'];
         $book->quantity=$_POST['quantity'];
@@ -41,11 +38,11 @@ class BooksController extends Controller{
 
         $book->save();
         $this->view('app-book-list');
-    }
-    
-    function edit(){
-        
 
+
+    }
+    function edit(){
+            $this->view('edit_category');
     }
     function update(){
 
@@ -76,10 +73,6 @@ class BooksController extends Controller{
 
         return null;
     }
-
-    
-
-
 
 
 }

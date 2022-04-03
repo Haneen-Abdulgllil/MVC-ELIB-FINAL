@@ -6,10 +6,9 @@ use coding\app\system\Router;
 use coding\app\controllers\UsersController;
 use coding\app\controllers\HomeController;
 use coding\app\controllers\CategoryController;
-use coding\app\controllers\indexCategoryController;
-use coding\app\controllers\indexBookController;
+use coding\app\controllers\indexController;
 use coding\app\controllers\AuthorsController;
-use coding\app\controllers\PublishersController;
+use coding\app\controllers\publishersController;
 use coding\app\controllers\booksController;
 use coding\app\controllers\cityController;
 use coding\app\controllers\OfferController;
@@ -61,30 +60,30 @@ Router::post('/save_user',[UsersController::class,'saveUser']);
 
 Router::get('/categories',[CategoryController::class,'listAll']);
 Router::get('/add_category',[CategoryController::class,'add_category']);
-Router::get('/edit_category',[CategoryController::class,'editcategory']);
-Router::get('/remove_category',[CategoryController::class,'remove']);
+Router::get('/edit_category/{id}',[CategoryController::class,'edit']);
+Router::get('/remove_category',[CategoryController::class,'unActivate']);
 Router::post('/save_category',[CategoryController::class,'store']);
 Router::post('/update_category',[CategoryController::class,'update']);
 
 
-Router::get('/',[IndexCategoryController::class,'listAll']);
-Router::get('/',[IndexBookController::class,'listAll']);
+
+Router::get('/',[IndexController::class,'listAll']);
+
 ////////////////////////////Authors///////////
 
 Router::get('/authors',[AuthorsController::class,'listAll']);
 Router::get('/add_author',[AuthorsController::class,'add_author']);
 Router::get('/edit_author',[AuthorsController::class,'editauthor']);
-Router::get('/remove_author',[AuthorsController::class,'remove']);
 Router::post('/save_author',[AuthorsController::class,'store']);
 Router::post('/update_author',[AuthorsController::class,'update']);
+Router::get('/remove_author',[AuthorsController::class,'remove']);
 
 ////////////////////////////Publishers///////////
 
 Router::get('/publishers',[PublishersController::class,'listAll']);
 Router::get('/add_publisher',[PublishersController::class,'add_publisher']);
-Router::get('/edit_publisher',[PublishersController::class,'editpublisher']);
-Router::get('/remove_publisher',[PublishersController::class,'remove']);
-Router::post('/save_publisher',[PublishersController::class,'store']);
+Router::get('/edit_author',[PublishersController::class,'editauthor']);
+Router::post('/save_author',[PublishersController::class,'store']);
 Router::post('/update_publisher',[PublishersController::class,'update']);
 
 ////////////////////////////book///////////
@@ -93,6 +92,7 @@ Router::get('/books',[BooksController::class,'listAll']);
 Router::get('/add_book',[BooksController::class,'add_book']);
 Router::get('/edit_book',[BooksController::class,'editbook']);
 Router::post('/save_book',[BooksController::class,'store']);
+// Router::post('/app-book-list',[BooksController::class,'store']);
 
 ////////////////////////////city/////////
 
@@ -105,9 +105,11 @@ Router::post('/update_city',[CityController::class,'update']);
 
 ////////////////////////////Offers///////////
 
-Router::get('/add_offer',[OfferController::class,'add_offer']);
-Router::get('/edit_offer',[OfferController::class,'editoffer']);
-Router::get('/app-offer-list',[OfferController::class,'offer']);
+Router::get('/offers',[OffersController::class,'listAll']);
+Router::get('/add_offer',[OffersController::class,'create']);
+Router::get('/edit_offer',[OffersController::class,'edit_offer']);
+Router::get('/save_offer',[OffersController::class,'store']);
+Router::get('/app-offer-list',[OffersController::class,'offer']);
 
 ////////////////////////////orders///////////
 
@@ -122,10 +124,10 @@ Router::get('/edit_orderdetails',[orderdetailsController::class,'editorderdetail
 Router::get('/app-orderdetails-list',[orderdetailsController::class,'orderdetails']);
 
 ////////////////////////////payements///////////
-
-Router::get('/add_payements',[payementController::class,'add_payements']);
-Router::get('/edit_payements',[payementController::class,'editpayements']);
-Router::get('/app-payements-list',[payementController::class,'payements']);
+Router::get('/payments',[payementController::class,'listAll']);
+Router::get('/add_payments',[payementController::class,'add_payments']);
+Router::get('/edit_payments',[payementController::class,'edit_payments']);
+Router::get('/save_payments',[payementController::class,'store']);
 
 ////////////////////////////user_addresses///////////
 
@@ -138,7 +140,7 @@ Router::get('/app-useraddress-list',[useraddressController::class,'useraddress']
 
 Router::get('/add_user_payment',[UserPaymentController::class,'add_user_payment']);
 Router::get('/edit_user_payment',[UserPaymentController::class,'edituser_payment']);
-Router::get('/app-user_payment-list',[UserPaymentController::class,'user_payment']);
+Router::get('/app-user_payment-list',[UserPaymentController::class,'store']);
 
 ////////////////////////////user_profiles///////////
 

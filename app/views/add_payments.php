@@ -398,27 +398,24 @@
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <form class="card-body" action="/save_user" method="POST">
+  <form class="card-body" action="/save_payments" method="POST">
     <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-discount">الاسم</label>
         <input name="name" type="text" id="multicol-discount" class="form-control" placeholder="" />
       </div>
-   
-     
-
-     <div class="col-md-6">
+<div class="col-md-6">
           <label for="formFile" class="form-label">الصور</label>
           <input class="form-control" name="image" type="file" id="formFile">
         </div>
-        <div class="col-md-6 select2-primary">
+        <!-- <div class="col-md-6 select2-primary">
         <label class="form-label" for="multicol-language">اضيف بواسطة </label>
         <select id="multicol-language" class="select2 form-select" >
           <option value="1" selected>1</option>
           <option value="2" >2</option>
           <option value="3">3</option>
           <option value="4">4</option>
-        </select>
+        </select> -->
       </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
@@ -437,9 +434,6 @@
       </div>
     </div>
     </div>
-    
-    
-  
     
     
     <div class="pt-4">

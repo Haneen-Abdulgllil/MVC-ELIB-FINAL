@@ -115,10 +115,12 @@
                 
                 <!-- start explore -->
                 
-                <div class="exlpore_container">
+                <div class="exlpore_container"></div>
+        
                     <h2>تصفح حسب القسم </h2>
                     <div class="explore_content">
-                        <?php foreach($params as $category){?>
+
+                    <?php foreach($params['categories']  as $category){?>
                         <div class="explore_card">
                             <div class="icon">
                                     <!-- <a href=""> <i class="fa fa-cart-plus" id="i1"></i></a> -->
@@ -145,11 +147,11 @@
                             <a href="category">عرض الكل</a>
                 
                     </div>
-                    
+                
                     <div class="order_content">
                         <a href="details">
-                    
-                        <?php foreach($params as $book){?>
+                
+                        <?php foreach($params['books'] as $book){?>
                                 <div class="product_card">
                                         <div class="remain_timer">
                                                 <span id="days"></span>

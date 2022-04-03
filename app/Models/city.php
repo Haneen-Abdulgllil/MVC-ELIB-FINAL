@@ -2,7 +2,7 @@
 
 namespace coding\app\models;
 
-class Author extends Model{
+class City extends Model{
     function __construct()
     {
 

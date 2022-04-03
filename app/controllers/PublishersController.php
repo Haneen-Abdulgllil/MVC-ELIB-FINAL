@@ -1,6 +1,5 @@
 <?php
 namespace coding\app\controllers;
-
 use coding\app\Models\Publisher;
 
 
@@ -36,6 +35,7 @@ class PublishersController extends Controller{
         $this->view('app-publisher-list');
 
     }
+    
     function edit(){
         $this->view('edit_publisher');
     }

@@ -197,7 +197,7 @@
         </a>
       </li>
       <li class="menu-item">
-        <a href="/app-book-list" class="menu-link">
+        <a href="/books" class="menu-link">
           <div data-i18n="عرض الكتب">عرض الكتب</div>
         </a>
       </li>
@@ -220,7 +220,7 @@
       </li>
 
       <li class="menu-item">
-        <a href="/app-offer-list" class="menu-link">
+        <a href="/offers" class="menu-link">
           <div data-i18n=" العروض">العروض</div>
         </a>
       </li>
@@ -243,7 +243,7 @@
         </a>
       </li>
       <li class="menu-item">
-        <a href="/app-order-list" class="menu-link">
+        <a href="/orders" class="menu-link">
           <div data-i18n="الطلبات">الطلبات</div>
         </a>
       </li>
@@ -286,12 +286,12 @@
     </a>
     <ul class="menu-sub">
     <li class="menu-item">
-        <a href="/add_payements" class="menu-link">
+        <a href="/add_payments" class="menu-link">
           <div data-i18n="اضافة طريقة دفع">اضافة طريقة دفع</div>
         </a>
       </li>
       <li class="menu-item">
-        <a href="/app-payements-list" class="menu-link">
+        <a href="/payments" class="menu-link">
           <div data-i18n="عرض طرق الدفع">عرض طررق الدفع </div>
         </a>
       </li>

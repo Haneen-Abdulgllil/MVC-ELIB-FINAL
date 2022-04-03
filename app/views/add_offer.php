@@ -1,8 +1,107 @@
-<?php include "aside.php"?>   
+<!DOCTYPE html>
 
-<!-- / Menu -->
+
+
+
+
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed " dir="ltr" data-theme="theme-semi-dark" data-assets-path="assets/" data-template="vertical-menu-template-semi-dark">
+
+  
+<!-- form-layouts-vertical.html , Sat, 26 Mar 2022 16:53:12 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title> Vertical Layouts - Forms | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    
+    <meta name="description" content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!" />
+    <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
+    <!-- Canonical SEO -->
+    <link rel="canonical" href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-semi-dark.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/flatpickr/flatpickr.css" />
+<link rel="stylesheet" href="assets/vendor/libs/select2/select2.css" />
+
+    <!-- Page CSS -->
+    
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <!-- Custom notification for demo -->
+    <!-- beautify ignore:end -->
+
+</head>
+
+<body>
+
+  <!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar  ">
+  <div class="layout-container">
 
     
+    
+
+
+
+
+  
+  
+      <!-- Menu -->
+
+      <?php include("aside.php");?>
+      <!-- / Menu -->
+
 
     <!-- Layout container -->
     <div class="layout-page">
@@ -92,7 +191,94 @@
 
           
 
-      
+          <!-- Style Switcher -->
+          <li class="nav-item me-2 me-xl-0">
+            <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
+              <i class='bx bx-sm'></i>
+            </a>
+          </li>
+          <!--/ Style Switcher -->
+
+          <!-- Quick links  -->
+          <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              <i class='bx bx-grid-alt bx-sm'></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end py-0">
+              <div class="dropdown-menu-header border-bottom">
+                <div class="dropdown-header d-flex align-items-center py-3">
+                  <h5 class="text-body mb-0 me-auto">Shortcuts</h5>
+                  <a href="javascript:void(0)" class="dropdown-shortcuts-add text-body" data-bs-toggle="tooltip" data-bs-placement="top" title="Add shortcuts"><i class="bx bx-sm bx-plus-circle"></i></a>
+                </div>
+              </div>
+              <div class="dropdown-shortcuts-list scrollable-container">
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-calendar fs-4"></i>
+                    </span>
+                    <a href="app-calendar.html" class="stretched-link">Calendar</a>
+                    <small class="text-muted mb-0">Appointments</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-food-menu fs-4"></i>
+                    </span>
+                    <a href="app-invoice-list.html" class="stretched-link">Invoice App</a>
+                    <small class="text-muted mb-0">Manage Accounts</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-user fs-4"></i>
+                    </span>
+                    <a href="app-user-list.html" class="stretched-link">User App</a>
+                    <small class="text-muted mb-0">Manage Users</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-check-shield fs-4"></i>
+                    </span>
+                    <a href="app-access-roles.html" class="stretched-link">Role Management</a>
+                    <small class="text-muted mb-0">Permission</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-pie-chart-alt-2 fs-4"></i>
+                    </span>
+                    <a href="index-2.html" class="stretched-link">Dashboard</a>
+                    <small class="text-muted mb-0">User Profile</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-cog fs-4"></i>
+                    </span>
+                    <a href="pages-account-settings-account.html" class="stretched-link">Setting</a>
+                    <small class="text-muted mb-0">Account Settings</small>
+                  </div>
+                </div>
+                <div class="row row-bordered overflow-visible g-0">
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-help-circle fs-4"></i>
+                    </span>
+                    <a href="pages-help-center-landing.html" class="stretched-link">Help Center</a>
+                    <small class="text-muted mb-0">FAQs & Articles</small>
+                  </div>
+                  <div class="dropdown-shortcuts-item col">
+                    <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
+                      <i class="bx bx-window-open fs-4"></i>
+                    </span>
+                    <a href="modal-examples.html" class="stretched-link">Modals</a>
+                    <small class="text-muted mb-0">Useful Popups</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
           <!-- Quick links -->
 
           <!-- Notification -->
@@ -391,72 +577,99 @@
           <div class="container-xxl flex-grow-1 container-p-y">
             
             
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> ADD  Offer</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-  <form class="card-body" action="/save_user" method="POST">
+  <h5 class="card-header">انشاء   عرض  جديد</h5>
+  <form class="card-body" action="/save_offer" method="POST" enctype="multipart/form-data">
+    
     <div class="row g-3">
       <div class="col-md-6">
-        <label class="form-label" for="multicol-username">عنوان العرض</label>
-        <input name="title" type="text" id="multicol-username" class="form-control" placeholder="" />
+        <label class="form-label" for="multicol-username">اسم العرض</label>
+        <input name="category_name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
-     
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-discount">الخصم</label>
-        <input name="discount" type="number" id="multicol-discount" class="form-control" placeholder="" />
+      <div class="col-md-3">
+        <label class="form-label" for="multicol-email">تاريخ بداية العرض</label>
+        <div class="col-md-10">
+            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+          </div>
       </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-birthdate"> تاريخ البداية</label>
-        <input type="text" name="start_date" id="multicol-birthdate" class="form-control dob-picker" placeholder="YYYY-MM-DD" />
+      <div class="col-md-3">
+        <label class="form-label" for="multicol-email">تاريخ نهاية العرض</label>
+        <div class="col-md-10">
+            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+          </div>
       </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-birthdate"> تاريخ النهاية</label>
-        <input type="text" name="end_date" id="multicol-birthdate" class="form-control dob-picker" placeholder="YYYY-MM-DD" />
-      </div>
-     
-      <div class="col-md-6 select2-primary">
-        <label class="form-label" for="multicol-language">الكتب </label>
-        <select id="multicol-language" class="select2 form-select" >
-          <option value="1" selected>1</option>
-          <option value="2" >2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
+      
+      
+    </div>
+    <div class="row g-3">
 
-      <div class="col-md-6 select2-primary">
-        <label class="form-label" for="multicol-language">الاقسام </label>
-        <select id="multicol-language" class="select2 form-select" >
-          <option value="1" selected>1</option>
-          <option value="2" >2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
-   
-      <div class="col-md-6">
-        <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">كل الكتب</label>
-          <div class="input-group input-group-merge">
-          <label class="switch">
-              <input name="all_books" value=1 type="checkbox" checked class="switch-input" />
-              <span class="switch-toggle-slider">
-                <span class="switch-on"></span>
-                <span class="switch-off"></span>
-              </span>
-              <span class="switch-label">كل الكتب</span>
-            </label>
+    <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2">حسب الكتاب</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2">حسب القسم</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2">الكل</label>
+            </div>
+
+    </div>
+
+
+
+    <?php 
+        for($i=0;$i<10;$i++){
+            echo "<p class='remove' data-id=$i>click here</p>";
+        }
+    ?>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label" for="multicol-username">الكتب المحددة</label>
+        <div class="row mb-3 select2-primary">
+          
+          <div class="col-sm-9">
+            <select  name="selected_books[]"disabled id="multicol-language" class="select2 form-select" multiple>
+              <option value="en" selected>English</option>
+              <option value="fr" selected>French</option>
+              <option value="de">German</option>
+              <option value="pt">Portuguese</option>
+            </select>
           </div>
         </div>
       </div>
+      <div class="col-md-4">
+        <label class="form-label" for="multicol-username">الكتب المحددة</label>
+        <div class="row mb-3 select2-primary">
+          
+          <div class="col-sm-9">
+            <select  name="selected_cats" disabled id="multicol-language" class="select2 form-select" multiple>
+            
+    <?php
+    foreach($params['categories'] as $cats){ ?>
+<option value="<?= $cats['id'];?>"><?= $cats['name'] ;?></option>
 
- <div class="col-md-6">
+  <?php  } 
+    ?>
+
+
+            </select>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">الحالة</label>
+          <label class="form-label" for="multicol-confirm-password">تفعيل القسم</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
@@ -464,13 +677,11 @@
                 <span class="switch-on"></span>
                 <span class="switch-off"></span>
               </span>
-              <span class="switch-label"> مفعل </span>
+              <span class="switch-label">is active</span>
             </label>
           </div>
         </div>
       </div>
-    </div>
-    
     </div>
     
     
@@ -490,7 +701,30 @@
           <!-- / Content -->
 
           
+          
 
+<!-- Footer -->
+<footer class="content-footer footer bg-footer-theme">
+  <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+    <div class="mb-2 mb-md-0">
+      © <script>
+      document.write(new Date().getFullYear())
+      </script>
+      , made with ❤️ by <a href="https://themeselection.com/" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+    </div>
+    <div>
+      
+      <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+      <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+      
+      <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank" class="footer-link me-4">Documentation</a>
+      
+      
+      <a href="https://themeselection.com/support/" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
+      
+    </div>
+  </div>
+</footer>
 <!-- / Footer -->
 
           
@@ -514,7 +748,10 @@
   <!-- / Layout wrapper -->
 
   
-
+  <div class="buy-now">
+    <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="btn btn-danger btn-buy-now">Buy Now</a>
+  </div>
+  
 
   
 
@@ -544,7 +781,16 @@
 
   <!-- Page JS -->
   <script src="assets/js/form-layouts.js"></script>
-  
+<script>
+
+    $(document).ready(function(){
+
+
+    
+        
+
+    });
+</script>  
 </body>
 
 

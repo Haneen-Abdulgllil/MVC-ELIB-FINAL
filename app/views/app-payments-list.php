@@ -475,10 +475,7 @@
         <div class="container-xxl flex-grow-1 container-p-y">
 
 
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> عرض الاقسام</h4>
-
-        
-
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> عرض طرق الدفع</h4>
 
         <!-- Multi Column with Form Separator -->
         <!-- Bordered Table -->
@@ -488,45 +485,32 @@
     <table class="table table-bordered">
     <thead>
         <tr>
-        <th>عنوان الكتاب</th>
+        <th>طريقة الدفع</th>
         <th>الصورة</th>
-        <th>عدد الصفحات</th>
-        <th>سعر الكتاب</th>
-        <th> الصيغة</th>
-        <th> تاريخ الاضافة</th>
-        <th> تاريخ التعديل</th>
         <th>الحالة</th>
-        <th>الوصف</th>
+        
         <th>العمليات</th>
         </tr>
     </thead>
     <tbody>
 
-    <?php foreach($params as $book){?>
+    <?php foreach($params as $pay){?>
         <tr>
         
-        <td><?= $book['title'];?></td>
+        <td><?= $pay['name'];?></td>
         <td>
-            <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $book['image'];?>">
+            <img class="img-fluid rounded" height="150px" width="150px" src="images/<?= $pay['image'];?>">
         </td>
- 
-        <td><?= $book['pages_number'];?></td>
-        <td><?= $book['price'];?></td>
-        <td><?= $book['format'];?></td>
-        <td><?= $book['created_at'];?></td>
-        <td><?= $book['updated_at'];?></td>
         <td>
-        <?php if($book['is_active']==1) {?>    
+        <?php if($pay['is_active']==1) {?>    
         <span class="badge bg-label-success me-1">مفعل</span>
         <?php }
         else {?>
         <span class="badge bg-label-danger me-1">موقف</span>
         <?php } ?>
         </td>
-        <td><?= $book['description'];?></td>
         <td>
-
-        <a href="/edit_book/<?php echo $book['id'];?>" class="btn btn-icon btn-outline-dribbble">
+        <a href="/edit_pay/<?php echo $pay['id'];?>" class="btn btn-icon btn-outline-dribbble">
             <i class="tf-icons bx bx-edit-alt me-1"></i>
             </a>
             <button type="button" class="btn btn-icon btn-outline-dribbble">
