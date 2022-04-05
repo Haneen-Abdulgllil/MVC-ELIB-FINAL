@@ -59,7 +59,7 @@ class CategoryController extends Controller{
         if($is_active==0)$is_active=1;
         else $is_active = 0;
         $category = new Category();
-        $category->update(array("is_active"),array($is_active), "id= $id");
+        $category->update(array("is_active") , array($is_active)," id = $id");
         header("location:/categories"); 
     }
 

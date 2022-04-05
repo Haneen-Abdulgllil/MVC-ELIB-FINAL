@@ -518,7 +518,7 @@
               </a>
 
 
-    <form action="/remove_category" action = "post" class = "d-inline-block">
+    <form action="/remove_category" method = "post" class = "d-inline-block">
     <input type="hidden" value="<?= $category['id']?>" name="id">
     <input type="hidden" value="<?= $category['is_active']?>" name="is_active">
 
